@@ -4,7 +4,8 @@
 #include "res_path.h"
 #include <algorithm>
 
-Entity::Entity(std::string sprite_file, SDL_Rect rect, SDL_Rect collision_rect, int number_of_clip_lines, int number_of_clip_rows)
+Entity::Entity(std::string sprite_file, SDL_Rect rect, SDL_Rect collision_rect, int number_of_clip_lines, int number_of_clip_rows):\
+Sprite(sprite_file,rect)
 {
 	this->rect = rect;
 	this->collision_rect = collision_rect;
