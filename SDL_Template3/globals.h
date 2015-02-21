@@ -4,7 +4,7 @@
 #include <vector>
 
 #include "Entity.h"
-#include "boost/variant.hpp"
+
 
 extern std::vector< Entity * > sprites;
 extern std::string resPath;
