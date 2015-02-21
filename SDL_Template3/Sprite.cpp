@@ -2,17 +2,27 @@
 #include "globals.h"
 #include "SDL_mixer.h"
 #include "res_path.h"
-#include <algorithm>
 
+using namespace std;
 
 Sprite::Sprite(std::string sprite_file, SDL_Rect rect)
 {
 	this->rect = rect;
-	texture = loadTexture(resPath + sprite_file, renderer);
-	
+
+	std::vector<SDL_Texture*> texture_vector;
+
+	std::stringstream ss(sprite_file);
+
+	while (ss.good())
+	{
+		string substr;
+		getline(ss, substr, ',');
+		texture_vector.push_back(loadTexture(resPath + sprite_file, renderer));
+	}
+	this->texture_vector = texture_vector;
 }
 
 void Sprite::render() {
-	renderTexture(texture, renderer, rect);
+	renderTexture(texture_vector[0], renderer, rect);
 
 }

@@ -2,6 +2,14 @@
 #define SPRITE_H
 
 #include <SDL.h>
+#include <algorithm>
+#include <vector>
+#include <string>
+#include <sstream>
+#include <fstream>
+#include <iostream>
+
+#include <string>
 #include "texture.h"
 
 class Sprite{
@@ -11,6 +19,7 @@ private:
 	int number_of_clip_rows = 1;
 
 	SDL_Rect clips[16];
+	std::vector<SDL_Texture*> texture_vector;
 	SDL_Texture * texture;
 	void moveAnimation(int new_direction);
 	void parseSprite(std::string sprite_file);
