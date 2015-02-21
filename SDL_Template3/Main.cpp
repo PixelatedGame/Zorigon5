@@ -80,7 +80,7 @@ void Game::start() {
 	//Mix_FreeChunk(music);
 
 	//hero = new Entity(0, 0);
-	Hero = new Dodo("dodo-purple.png,dodo-jump-1.png,dodo-jump-2.png,dodo-jump-3.png,dodo-jump-4.png,dodo-jump-5.png", {0,30,182,196});
+	Hero = new Dodo("dodo-jump-1.png,dodo-jump-2.png,dodo-jump-3.png,dodo-jump-4.png,dodo-jump-5.png", {0,30,182,196});
 	
 	background = new Background();
 	

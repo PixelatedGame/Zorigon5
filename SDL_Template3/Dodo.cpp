@@ -39,16 +39,16 @@ void Dodo::update(){
 			cycle_counter = 0;
 		}
 		cycle_counter += 1;
-		rect.y = 330;
+		rect.y +=1;
 		break;
 	case DUCK:
-		current_clip = 4;
+		current_clip = 2;
 		cycle_counter = 0;
 		jump_power += 1;
 		rect.y = 400;
 		break;
 	case JUMP:
-		current_clip = 5;
+		current_clip = 4;
 		if (cycle_counter == 0){
 			rect.y = 330;
 		}
@@ -60,7 +60,7 @@ void Dodo::update(){
 		rect.y -= 1;
 		break;
 	case SWIP:
-		current_clip = 1;
+		current_clip = 0;
 		jump_power = 0;
 		if (rect.y >= 330){
 			rect.y = 330;
@@ -77,7 +77,7 @@ void Dodo::update(){
 		break;
 
 	case EXIT_JUMP:
-		current_clip = 4;
+		current_clip = 0;
 		jump_power = 0;
 		if (rect.y>=330){
 			rect.y = 330;
