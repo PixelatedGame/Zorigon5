@@ -80,7 +80,7 @@ void Game::start() {
 	//Mix_FreeChunk(music);
 
 	//hero = new Entity(0, 0);
-	Hero = new Dodo("dodo-purple.png");
+	Hero = new Dodo("dodo-purple.png", {0,0,150,150});
 	
 
 

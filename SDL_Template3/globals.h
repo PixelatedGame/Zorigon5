@@ -21,8 +21,8 @@ enum face_directions {
 
 
 enum {
-	DISPLAY_WIDTH = 800
-	, DISPLAY_HEIGHT = 600
+	DISPLAY_WIDTH = 1136
+	, DISPLAY_HEIGHT = 640
 	, UPDATE_INTERVAL = 1000 / 20
 	, HERO_SPEED = 20
 };
