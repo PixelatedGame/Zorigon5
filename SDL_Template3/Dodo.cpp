@@ -34,7 +34,7 @@ void Dodo::update(){
 		break;
 	case ENTER_DUCK:
 		current_clip = 1;
-		if (cycle_counter >= 70){
+		if (cycle_counter >= 30){
 			state = DUCK;
 			cycle_counter = 0;
 		}
@@ -42,10 +42,10 @@ void Dodo::update(){
 		rect.y +=1;
 		break;
 	case DUCK:
-		current_clip = 2;
+		current_clip = 3;
 		cycle_counter = 0;
 		jump_power += 1;
-		rect.y = 400;
+		rect.y = 360;
 		break;
 	case JUMP:
 		current_clip = 4;
