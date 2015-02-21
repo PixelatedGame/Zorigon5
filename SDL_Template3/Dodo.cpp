@@ -39,13 +39,13 @@ void Dodo::update(){
 			cycle_counter = 0;
 		}
 		cycle_counter += 1;
-		rect.y +=1;
+		//rect.y +=1;
 		break;
 	case DUCK:
 		current_clip = 2;
 		cycle_counter = 0;
 		jump_power += 1;
-		rect.y = 400;
+		rect.y = 330;
 		break;
 	case JUMP:
 		current_clip = 4;
