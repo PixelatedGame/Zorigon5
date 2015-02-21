@@ -77,7 +77,7 @@ void Dodo::update(){
 		break;
 
 	case EXIT_JUMP:
-		current_clip = 0;
+		current_clip = 1;
 		jump_power = 0;
 		if (rect.y>=330){
 			rect.y = 330;
