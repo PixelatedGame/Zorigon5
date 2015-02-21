@@ -48,7 +48,7 @@ void Dodo::update(){
 		if (cycle_counter == 0){
 			rect.y = 330;
 		}
-		if (cycle_counter >= (jump_power/3) || rect.y==0){
+		if (cycle_counter >= (jump_power/3) || rect.y==80){
 			cycle_counter = 0;
 			state = SWIP;
 		}
