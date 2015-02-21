@@ -2,10 +2,9 @@
 #ifndef ENTITY_H
 #define ENTITY_H
 
-#include <SDL.h>
+#include "Sprite.h"
 #include <string>
 #include <vector>
-#include "texture.h"
 
 
 

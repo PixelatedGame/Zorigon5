@@ -36,10 +36,10 @@ private:
 	enum state  : int { MENU, GAME };
 	int current_state = GAME;
 	
-	
+	Background * background;
 	Dodo * Hero;
 	
-	
+
 };
 
 Game::Game()
@@ -80,9 +80,10 @@ void Game::start() {
 	//Mix_FreeChunk(music);
 
 	//hero = new Entity(0, 0);
-	Hero = new Dodo("dodo-purple.png", {0,0,150,150});
+	Hero = new Dodo("dodo-purple.png", {0,30,182,196});
 	
-
+	background = new Background();
+	
 
 	this->running = 1;
 	run();
@@ -100,6 +101,8 @@ void Game::draw() {
 	SDL_RenderClear(renderer);
 
 	std::sort(sprites.begin(), sprites.end(), SortByX());
+
+	background->render();
 
 	for (auto p : sprites)
 	{
@@ -171,6 +174,8 @@ void Game::run() {
 			fpsChanged(fps);
 			fps = 0;
 		}
+
+
 
 		//Update Dodo
 		if (keys[SDLK_x])
