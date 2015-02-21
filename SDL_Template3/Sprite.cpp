@@ -23,6 +23,6 @@ Sprite::Sprite(std::string sprite_file, SDL_Rect rect)
 }
 
 void Sprite::render() {
-	renderTexture(texture_vector[0], renderer, rect);
+	renderTexture(texture_vector[current_clip], renderer, rect);
 
 }

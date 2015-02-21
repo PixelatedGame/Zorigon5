@@ -29,9 +29,11 @@ void Dodo::update(){
 	switch (state)
 	{
 	case SURF:
+		current_clip = 0;
 		rect.y = 330;
 		break;
 	case ENTER_DUCK:
+		current_clip = 1;
 		if (cycle_counter >= 70){
 			state = DUCK;
 			cycle_counter = 0;
@@ -40,11 +42,13 @@ void Dodo::update(){
 		rect.y = 330;
 		break;
 	case DUCK:
+		current_clip = 4;
 		cycle_counter = 0;
 		jump_power += 1;
 		rect.y = 400;
 		break;
 	case JUMP:
+		current_clip = 5;
 		if (cycle_counter == 0){
 			rect.y = 330;
 		}
@@ -56,6 +60,7 @@ void Dodo::update(){
 		rect.y -= 1;
 		break;
 	case SWIP:
+		current_clip = 1;
 		jump_power = 0;
 		if (rect.y >= 330){
 			rect.y = 330;
@@ -72,6 +77,7 @@ void Dodo::update(){
 		break;
 
 	case EXIT_JUMP:
+		current_clip = 4;
 		jump_power = 0;
 		if (rect.y>=330){
 			rect.y = 330;
