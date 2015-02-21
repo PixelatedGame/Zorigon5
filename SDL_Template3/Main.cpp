@@ -103,7 +103,7 @@ void Game::draw() {
 	std::sort(sprites.begin(), sprites.end(), SortByX());
 
 	background->render();
-
+	Hero->print_life();
 	for (auto p : sprites)
 	{
 		p->render();

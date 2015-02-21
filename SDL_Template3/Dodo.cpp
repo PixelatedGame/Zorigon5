@@ -3,7 +3,8 @@
 
 Dodo::Dodo(std::string sprite_file, SDL_Rect rect, SDL_Rect collision_rect, int number_of_clip_lines, int number_of_clip_rows):\
 Entity(sprite_file, rect, collision_rect, number_of_clip_lines, number_of_clip_rows){
-
+	Life = new Sprite("dodo-head.png", { 0, 0, 100, 85 });
+	Life_Rect = { 10, 10, 100, 85 };
 }
 
 bool Dodo::reset_life(){
@@ -115,4 +116,13 @@ void Dodo::off_click(){
 	default:
 		break;
 	}
+}
+
+void Dodo::print_life(){
+	SDL_Rect temp_rect = Life->rect;
+	for (int i = 0; i < life; i++){
+		Life->render();
+		Life->rect.x += 100;
+	}
+	Life->rect = temp_rect;
 }

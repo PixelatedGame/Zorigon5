@@ -14,12 +14,14 @@ private:
 	Sprite * Life;
 public:
 	Dodo(std::string sprite_file = "sprite.png", SDL_Rect rect = { 200, 200, 60, 60 }, SDL_Rect collision_rect = {}, int number_of_clip_lines = 1, int number_of_clip_rows = 1);
+	SDL_Rect Life_Rect;
 	bool lost_life();
 	int get_life();
 	bool reset_life();
 	void update();
 	void on_click();
 	void off_click();
+	void print_life();
 };
 
 #endif // !DODO_H
