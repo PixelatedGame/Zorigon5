@@ -4,7 +4,7 @@
 #include "Sprite.h"
 #include <vector>
 
-class Background : public Sprite{
+class Background{
 	std::vector< Sprite * > background_objects;
 	
 public:
