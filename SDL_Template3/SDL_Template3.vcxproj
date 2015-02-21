@@ -80,6 +80,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Dodo.cpp" />
     <ClCompile Include="globals.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="res_path.cpp" />
@@ -87,6 +88,7 @@
     <ClCompile Include="texture.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Dodo.h" />
     <ClInclude Include="globals.h" />
     <ClInclude Include="Main.h" />
     <ClInclude Include="res_path.h" />

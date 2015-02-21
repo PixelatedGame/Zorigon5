@@ -37,7 +37,7 @@ private:
 	int current_state = GAME;
 	
 	
-	Entity * Enemy;
+	Dodo * Hero;
 	
 	
 };
@@ -80,7 +80,7 @@ void Game::start() {
 	//Mix_FreeChunk(music);
 
 	//hero = new Entity(0, 0);
-	Enemy = new Entity("dodo-purple.png");
+	Hero = new Dodo("dodo-purple.png");
 	
 
 
@@ -172,7 +172,12 @@ void Game::run() {
 			fps = 0;
 		}
 
-
+		//Update Dodo
+		if (keys[SDLK_x])
+			Hero->on_click();
+		else
+			Hero->off_click();
+		Hero->update();
 		//menu 
 		
 

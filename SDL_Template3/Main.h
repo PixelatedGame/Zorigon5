@@ -12,7 +12,7 @@
 #include <ostream>
 #include "globals.h"
 #include "Entity.h"
-
+#include "Dodo.h"
 #include "res_path.h"
 
 #endif
