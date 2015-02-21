@@ -58,9 +58,6 @@
     <Image Include="..\Debug\res\dodo-purple.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="..\Debug\res\bg.png">
-      <Filter>Resource Files</Filter>
-    </Image>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Debug\libjpeg-9.dll">

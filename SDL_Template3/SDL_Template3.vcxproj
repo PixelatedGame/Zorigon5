@@ -96,7 +96,6 @@
     <ClInclude Include="texture.h" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\Debug\res\bg.png" />
     <Image Include="..\Debug\res\dodo-purple.png" />
   </ItemGroup>
   <ItemGroup>
