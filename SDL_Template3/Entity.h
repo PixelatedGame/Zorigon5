@@ -21,7 +21,7 @@ private:
 	void parseSprite(std::string sprite_file);
 public:
 	SDL_Rect collision_rect;
-	SDL_Rect rect;
+	
 	
 	void update();
 	void move(int ax = 0, int ay = 0);
