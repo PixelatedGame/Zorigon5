@@ -21,4 +21,4 @@ public:
 	void off_click();
 };
 
-#endif DODO_H
+#endif // !DODO_H
