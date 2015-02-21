@@ -106,6 +106,13 @@
     <None Include="..\Debug\SDL2_mixer.dll" />
     <None Include="..\Debug\zlib1.dll" />
   </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\SDL2-2.0.3\lib\x86\SDL2.lib" />
+    <Library Include="..\SDL2-2.0.3\lib\x86\SDL2main.lib" />
+    <Library Include="..\SDL2-2.0.3\lib\x86\SDL2test.lib" />
+    <Library Include="..\SDL2-2.0.3\lib\x86\SDL2_image.lib" />
+    <Library Include="..\SDL2-2.0.3\lib\x86\SDL2_mixer.lib" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

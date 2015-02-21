@@ -79,4 +79,21 @@
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\SDL2-2.0.3\lib\x86\SDL2.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\SDL2-2.0.3\lib\x86\SDL2_image.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\SDL2-2.0.3\lib\x86\SDL2_mixer.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\SDL2-2.0.3\lib\x86\SDL2main.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="..\SDL2-2.0.3\lib\x86\SDL2test.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+  </ItemGroup>
 </Project>
