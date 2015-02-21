@@ -11,6 +11,7 @@ private:
 	int life = 3;
 	int speed = 0;
 	int cycle_counter = 0;
+	Sprite * Life;
 public:
 	Dodo(std::string sprite_file = "sprite.png", SDL_Rect rect = { 200, 200, 60, 60 }, SDL_Rect collision_rect = {}, int number_of_clip_lines = 1, int number_of_clip_rows = 1);
 	bool lost_life();

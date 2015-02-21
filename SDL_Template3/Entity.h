@@ -11,7 +11,7 @@
 class Entity {
 private:
 	int direction = 0;
-	int iW = 32, iH = 48;
+	//int iW = 32, iH = 48;
 	int current_clip = 0;
 	int number_of_clip_lines = 1;
 	int number_of_clip_rows = 1;
