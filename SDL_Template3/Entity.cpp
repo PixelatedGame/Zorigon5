@@ -7,39 +7,13 @@
 Entity::Entity(std::string sprite_file, SDL_Rect rect, SDL_Rect collision_rect, int number_of_clip_lines, int number_of_clip_rows):\
 Sprite(sprite_file,rect)
 {
-	this->rect = rect;
 	this->collision_rect = collision_rect;
-	
-	parseSprite(sprite_file);
 
 
-	sprites.push_back(this);
+	entities.push_back(this);
 	
 }
 
-
-void Entity::parseSprite(std::string sprite_file)
-{
-	texture = loadTexture(resPath + sprite_file, renderer);
-	//collision_rect = { ax, ay, aw, ah };
-	//collision_rect = { ax+8, ay + 38 , 32 -16, 10 };
-
-	// this needs a better algorithm
-	/*
-	for (int current_row = 0; current_row < number_of_clip_rows; current_row++){
-		for (int current_line = 0; current_line < number_of_clip_lines; current_line++){
-			clips[(4 * current_row) + current_line].x = iW * current_line;
-			clips[(4 * current_row) + current_line].y = iH * current_row;
-			clips[(4 * current_row) + current_line].w = iW;
-			clips[(4 * current_row) + current_line].h = iH;
-		}
-	}
-	*/
-}
-
-void Entity::render() {
-	renderTexture(texture, renderer, rect);
-}
 
 void Entity::moveAnimation(int new_direction) {
 	if (new_direction == direction) {
@@ -134,7 +108,7 @@ bool Entity::isAbleToMove(int &rect_dimension, int amount)
 	rect_dimension += amount;
 	collision_rect = { rect.x + 8, rect.y + 38, collision_rect.w, collision_rect.h };
 	
-	for (auto p : sprites)
+	for (auto p : entities)
 	{
 		sprite_has_colided += CheckCollision(p->collision_rect);
 	}

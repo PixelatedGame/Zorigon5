@@ -17,7 +17,7 @@ Sprite::Sprite(std::string sprite_file, SDL_Rect rect)
 	{
 		string substr;
 		getline(ss, substr, ',');
-		texture_vector.push_back(loadTexture(resPath + sprite_file, renderer));
+		texture_vector.push_back(loadTexture(resPath + substr, renderer));
 	}
 	this->texture_vector = texture_vector;
 }

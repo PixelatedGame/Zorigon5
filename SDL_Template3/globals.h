@@ -6,7 +6,7 @@
 #include "Entity.h"
 
 
-extern std::vector< Entity * > sprites;
+extern std::vector< Entity * > entities;
 extern std::string resPath;
 extern SDL_Window* window;
 extern SDL_Renderer* renderer;

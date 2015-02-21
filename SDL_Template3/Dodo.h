@@ -12,9 +12,10 @@ private:
 	int speed = 0;
 	int cycle_counter = 0;
 	Sprite * Life;
+	SDL_Rect Life_Rect;
 public:
 	Dodo(std::string sprite_file = "sprite.png", SDL_Rect rect = { 200, 200, 60, 60 }, SDL_Rect collision_rect = {}, int number_of_clip_lines = 1, int number_of_clip_rows = 1);
-	SDL_Rect Life_Rect;
+	
 	bool lost_life();
 	int get_life();
 	bool reset_life();

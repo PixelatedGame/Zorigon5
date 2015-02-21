@@ -80,7 +80,7 @@ void Game::start() {
 	//Mix_FreeChunk(music);
 
 	//hero = new Entity(0, 0);
-	Hero = new Dodo("dodo-purple.png", {0,30,182,196});
+	Hero = new Dodo("dodo-purple.png,dodo-jump-1.png", {0,30,182,196});
 	
 	background = new Background();
 	
@@ -100,11 +100,11 @@ void Game::draw() {
 	SDL_SetRenderDrawColor(renderer, 255, 255, 255, SDL_ALPHA_OPAQUE);
 	SDL_RenderClear(renderer);
 
-	std::sort(sprites.begin(), sprites.end(), SortByX());
+	std::sort(entities.begin(), entities.end(), SortByX());
 
 	background->render();
 	Hero->print_life();
-	for (auto p : sprites)
+	for (auto p : entities)
 	{
 		p->render();
 	}

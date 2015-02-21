@@ -12,7 +12,7 @@ Background::Background(){
 	Sprite * Sea;
 	Sprite * Waves;
 
-	Cloud0 = new Sprite("layers_0000_Cloud1.png", { 40, 0, 130, 65 });
+	Cloud0 = new Sprite("layers_0000_Cloud1.png,layers_0001_Cloud2.png", { 40, 0, 130, 65 });
 	Cloud1 = new Sprite("layers_0001_Cloud2.png", { 730, 20, 120, 77 });
 	Cloud2 = new Sprite("layers_0002_cloud3.png", { 300, 55, 116, 60 });
 	Cloud3 = new Sprite("layers_0003_cloud4.png", { 440, 65, 156, 92 });

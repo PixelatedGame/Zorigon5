@@ -22,7 +22,7 @@ private:
 public:
 	SDL_Rect collision_rect;
 	SDL_Rect rect;
-	void render();
+	
 	void update();
 	void move(int ax = 0, int ay = 0);
 

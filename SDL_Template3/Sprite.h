@@ -25,7 +25,7 @@ protected:
 public:
 	SDL_Rect rect;
 
-	Sprite(std::string sprite_file = "sprite.png", SDL_Rect rect = { 200, 200, 60, 60 });
+	Sprite(std::string sprite_file = "spritez.png", SDL_Rect rect = { 200, 200, 60, 60 });
 	void render();
 
 
