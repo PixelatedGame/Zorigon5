@@ -82,6 +82,7 @@
   <ItemGroup>
     <ClCompile Include="Background.cpp" />
     <ClCompile Include="Dodo.cpp" />
+    <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="globals.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="res_path.cpp" />
@@ -92,6 +93,7 @@
   <ItemGroup>
     <ClInclude Include="Background.h" />
     <ClInclude Include="Dodo.h" />
+    <ClInclude Include="Enemy.h" />
     <ClInclude Include="globals.h" />
     <ClInclude Include="Main.h" />
     <ClInclude Include="res_path.h" />
